@@ -1,0 +1,34 @@
+
+.usa-header--basic .usa-nav {
+  justify-content: center;
+}
+.usa-nav__primary button[aria-expanded="false"] {
+  background-image: none;
+}
+
+.usa-header--basic .usa-nav__primary-item > .usa-current::after,
+.usa-header--basic .usa-nav__link:hover::after {
+  background-color: white;
+}
+
+/* Hover effects */
+.usa-nav__primary-item a:hover,
+.usa-nav__primary-item button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+  .usa-navbar {
+    flex-direction: column;
+  }
+  
+  .usa-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .usa-nav__primary {
+    margin-top: 1rem;
+  }
+}
